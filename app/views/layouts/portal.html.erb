@@ -37,12 +37,15 @@ By default, it renders:
     <% if content_for?(:head) %>
       <%= yield(:head) %>
     <% else %>
-      <title><%= @portal.page_title%></title>
+      <title>Madritech Solutions SAS</title>
     <% end %>
     
     <% if @portal.logo.present? %>
       <link rel="icon" href="<%= url_for(@portal.logo) %>">
     <% end %>
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
 
     <% unless @theme_from_params.blank? %>
     <%# this adds the theme from params, ensuring that there a localstorage value set %>
