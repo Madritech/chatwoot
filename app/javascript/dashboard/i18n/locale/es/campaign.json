@@ -137,6 +137,64 @@
         }
       }
     },
+    "WHATSAPP": {
+      "HEADER_TITLE": "Campañas de WhatsApp",
+      "NEW_CAMPAIGN": "Crear campaña",
+      "EMPTY_STATE": {
+        "TITLE": "No hay campañas de WhatsApp disponibles",
+        "SUBTITLE": "Lanza una campaña de WhatsApp para llegar directamente a tus clientes. Envía ofertas o realiza anuncios fácilmente. Haz clic en 'Crear campaña' para comenzar."
+      },
+      "CARD": {
+        "STATUS": {
+          "COMPLETED": "Completada",
+          "SCHEDULED": "Programada"
+        },
+        "CAMPAIGN_DETAILS": {
+          "SENT_FROM": "Enviado desde",
+          "ON": "el"
+        }
+      },
+      "CREATE": {
+        "TITLE": "Crear campaña de WhatsApp",
+        "CANCEL_BUTTON_TEXT": "Cancelar",
+        "CREATE_BUTTON_TEXT": "Crear",
+        "FORM": {
+          "TITLE": {
+            "LABEL": "Título",
+            "PLACEHOLDER": "Por favor, introduce el título de la campaña",
+            "ERROR": "El título es obligatorio"
+          },
+          "MESSAGE": {
+            "LABEL": "Mensaje",
+            "PLACEHOLDER": "Por favor, introduce el mensaje de la campaña",
+            "ERROR": "El mensaje es obligatorio"
+          },
+          "INBOX": {
+            "LABEL": "Seleccionar bandeja",
+            "PLACEHOLDER": "Seleccionar bandeja",
+            "ERROR": "La bandeja es obligatoria"
+          },
+          "AUDIENCE": {
+            "LABEL": "Audiencia",
+            "PLACEHOLDER": "Selecciona las etiquetas de los clientes",
+            "ERROR": "La audiencia es obligatoria"
+          },
+          "SCHEDULED_AT": {
+            "LABEL": "Hora programada",
+            "PLACEHOLDER": "Por favor, selecciona la hora",
+            "ERROR": "La hora programada es obligatoria"
+          },
+          "BUTTONS": {
+            "CREATE": "Crear",
+            "CANCEL": "Cancelar"
+          },
+          "API": {
+            "SUCCESS_MESSAGE": "Campaña de WhatsApp creada con éxito",
+            "ERROR_MESSAGE": "Hubo un error. Por favor, inténtalo de nuevo."
+          }
+        }
+      }
+    },
     "CONFIRM_DELETE": {
       "TITLE": "¿Está seguro de eliminar?",
       "DESCRIPTION": "La acción de eliminación es permanente y no puede ser revertida.",
