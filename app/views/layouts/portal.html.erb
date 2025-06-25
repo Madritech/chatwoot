@@ -37,7 +37,7 @@ By default, it renders:
     <% if content_for?(:head) %>
       <%= yield(:head) %>
     <% else %>
-      <title>Madritech Solutions SAS</title>
+      <title><%= @portal.page_title%></title>
     <% end %>
     
     <% if @portal.logo.present? %>

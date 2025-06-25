@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Madritech Solutions SAS</title>
+    <meta charset="UTF-8">
+
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="734185045706086">
+    <meta property="og:image" content="https://chat.madritech.co/brand-assets/logo.svg">
+    <meta property="og:url" content="https://chat.madritech.co">
+
+    <title>
+      <%= @global_config['INSTALLATION_NAME'] %>
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"/>
     <% if @global_config['DISPLAY_MANIFEST'] %>
       <meta name="msapplication-TileColor" content="#1f93ff">
@@ -11,11 +20,14 @@
       <% if ENV['IOS_APP_IDENTIFIER'].present? %>
         <meta name="apple-itunes-app" content='app-id=<%= ENV['IOS_APP_IDENTIFIER'] %>'>
       <% end %>
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" sizes="192x192" href="/logo192.png" />
-      <link rel="manifest" href="/manifest.json">
+      <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <meta name="apple-mobile-web-app-title" content="MIA" />
+      <link rel="manifest" href="/site.webmanifest" />
     <% end %>
-   <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="512x512" href="<%= @global_config['LOGO_THUMBNAIL'] %>">
     <%= csrf_meta_tags %>
     <script>
       window.chatwootConfig = {

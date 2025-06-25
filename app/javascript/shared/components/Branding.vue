@@ -27,14 +27,7 @@ export default {
   computed: {
     brandRedirectURL() {
       try {
-        const referrerHost = this.$store.getters['appConfig/getReferrerHost'];
-        const baseURL = `${this.globalConfig.widgetBrandURL}?utm_source=${
-          referrerHost ? 'widget_branding' : 'survey_branding'
-        }`;
-        if (referrerHost) {
-          return `${baseURL}&utm_referrer=${referrerHost}`;
-        }
-        return baseURL;
+        return this.globalConfig.widgetBrandURL;
       } catch (e) {
         // Suppressing the error as getter is not defined in some cases
       }
@@ -58,7 +51,7 @@ export default {
       <img
         class="ltr:mr-1 rtl:ml-1 max-w-3 max-h-3"
         :alt="globalConfig.brandName"
-        :src="globalConfig.logoThumbnail"
+        :src="'/assets/images/madritech_logo.svg'"
       />
       <span>
         {{ useInstallationName($t('POWERED_BY'), globalConfig.brandName) }}
