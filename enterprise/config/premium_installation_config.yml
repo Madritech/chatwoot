@@ -1,6 +1,6 @@
 # ------- Branding Related Config ------- #
 - name: INSTALLATION_NAME
-  value: 'MIA'
+  value: 'Chatwoot'
 - name: LOGO_THUMBNAIL
   value: '/brand-assets/logo_thumbnail.svg'
 - name: LOGO
@@ -8,15 +8,15 @@
 - name: LOGO_DARK
   value: '/brand-assets/logo_dark.svg'
 - name: BRAND_URL
-  value: 'https://madritech.co/'
+  value: 'https://www.chatwoot.com'
 - name: WIDGET_BRAND_URL
-  value: 'https://madritech.co/'
+  value: 'https://www.chatwoot.com'
 - name: BRAND_NAME
-  value: 'MIA'
+  value: 'Chatwoot'
 - name: TERMS_URL
-  value: 'https://chat.madritech.co/hc/tratamiento-datos/articles/1748900711-condiciones-de-servicio'
+  value: 'https://www.chatwoot.com/terms-of-service'
 - name: PRIVACY_URL
-  value: 'https://chat.madritech.co/hc/tratamiento-datos/articles/1748636674-politica-de-privacidad'
+  value: 'https://www.chatwoot.com/privacy-policy'
 - name: DISPLAY_MANIFEST
   value: true
 # ------- End of Branding Related Config ------- #
